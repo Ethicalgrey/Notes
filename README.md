@@ -5,7 +5,7 @@ An archive of my notes to hopefully help others.
 ## Active Directory
 #### LLMNR Poisioning with Responder
 
-	<ins>**1. What is LLMNR?**</ins>
+<ins>**1. What is LLMNR?**</ins>
   - LLMNR (Link-Local Multicast Name Resolution) is a protocol used by Windows systems to resolve hostnames to IP addresses on local networks, primarily in environments where a DNS server isn't available or DNS fails.
 
   - It allows devices to resolve names of other devices on the same local network without relying on a DNS server.
