@@ -43,12 +43,7 @@ ul {
     list-style-type: square;
 }
 
-/* Moving Background */
-@keyframes backgroundMove {
-    0% { background-position: 0 0; }
-    100% { background-position: 100px 100px; }
-}
-
+/* Cybersecurity-themed Animated Background with Glowing Grid */
 body::before {
     content: "";
     position: fixed;
@@ -56,8 +51,17 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, rgba(0, 255, 255, 0.2), rgba(255, 0, 255, 0.2));
-    background-size: 200% 200%;
+    background: linear-gradient(90deg, rgba(0,255,0,0.1) 10%, rgba(0,0,0,0.9) 90%), url('https://www.transparenttextures.com/patterns/hexellence.png');
+    background-size: cover;
     z-index: -1;
-    animation: backgroundMove 10s infinite linear;
+    animation: gridGlow 5s infinite alternate;
+}
+
+@keyframes gridGlow {
+    from {
+        filter: brightness(1);
+    }
+    to {
+        filter: brightness(1.3);
+    }
 }
